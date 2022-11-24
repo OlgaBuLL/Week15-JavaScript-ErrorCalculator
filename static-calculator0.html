@@ -11,6 +11,7 @@
             height: 100vh;
             background: rgb(49, 49, 49);
             color: rgb(254, 255, 254);
+            font-family: 'Oswald';
         }
 
         img {
@@ -39,6 +40,7 @@
             background: rgb(255, 255, 255);
             border: 3px solid rgb(122, 122, 121);
             border-radius: 5px;
+            padding-left: 10px;
         }
 
         input:hover {
@@ -46,10 +48,11 @@
         }
 
         button {
+            cursor: pointer;
             font-size: 30px;
             width: 50px;
             height: 50px;
-            background: rgb(114, 179, 123);
+            background: rgb(64, 174, 79);
             border: 2px solid rgb(67, 133, 67);
             border-radius: 5px;
             color: rgb(255, 255, 255);
@@ -58,6 +61,7 @@
 
         button:hover {
             transform: scale(1.05);
+            background: rgb(67, 133, 67);
         }
 
         #errorMessage {
@@ -71,7 +75,7 @@
 
     <h2>Делить на 0 нельзя</h2>
     <div class="calculator">
-        <input type="text" id="number1" placeholder="Type first number..." onclick="clearMe()">
+        <input type="text" id="number1" placeholder="Type first number...">
 
         <input type="text" id="number2" placeholder="Type second number...">
         <div>
@@ -85,7 +89,7 @@
 
         <input type="text" id="result" placeholder="Result">
     </div>
-    <script src="calculator0.js"></script>
+    <script src="./static-calculator0.js"></script>
 </body>
 
 </html>
